@@ -113,6 +113,7 @@ MARKDOWN
 
 after_bundle do
   run "bundle exec figaro install"
+  run "bundle exec spring stop"
   generate('simple_form:install', '--bootstrap')
   generate('devise:install')
   generate('devise', 'User')
